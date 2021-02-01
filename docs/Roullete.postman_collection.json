@@ -1,0 +1,68 @@
+{
+	"id": "b00eb622-52e4-d4d3-c380-22be088f921f",
+	"name": "Roullete",
+	"description": "",
+	"order": [
+		"00cde8b6-09d2-ec70-c167-75d52aa6c4dc",
+		"2938992d-45b2-ed4a-9ab1-24a17119d48a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1612159994262,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "00cde8b6-09d2-ec70-c167-75d52aa6c4dc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:64738/api/Roulette/CreateRoulette",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1612181984495,
+			"name": "Create Roulette",
+			"description": "",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"responses": [],
+			"rawModeData": "{\n    \"number\": 1,\n    \"created\": \"2021-02-01T05:00:00Z\",\n    \"active\": true\n}"
+		},
+		{
+			"id": "2938992d-45b2-ed4a-9ab1-24a17119d48a",
+			"headers": "",
+			"headerData": [],
+			"url": "https://localhost:64738/api/Roulette/GetRoulettes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1612181982543,
+			"name": "Get Roulletes",
+			"description": "",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"responses": []
+		}
+	]
+}
