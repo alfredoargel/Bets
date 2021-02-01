@@ -4,18 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{9E93B49E-3310-4CD7-9A51-408618058FC6}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Roullete.postman_collection.json = docs\Roullete.postman_collection.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ABC94E28-6406-4310-9965-F54A65B86E6A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7A3C2493-8A4F-4D45-8BF6-5FF26966308B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bets.Application", "Bets.Application\Bets.Application.csproj", "{5F835705-3743-4602-8E4C-2C04BE2E8990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bets.Application", "Bets.Application\Bets.Application.csproj", "{5F835705-3743-4602-8E4C-2C04BE2E8990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bets.Infrastructure", "Bets.Infrastructure\Bets.Infrastructure.csproj", "{0650C1F9-D25F-480D-9677-79B05A8770A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bets.Infrastructure", "Bets.Infrastructure\Bets.Infrastructure.csproj", "{0650C1F9-D25F-480D-9677-79B05A8770A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bets.WebApi", "Bets.WebApi\Bets.WebApi.csproj", "{54C16F61-859C-4A89-B02C-96E6401A291D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bets.WebApi", "Bets.WebApi\Bets.WebApi.csproj", "{54C16F61-859C-4A89-B02C-96E6401A291D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bets.UnitTests", "Bets.UnitTests\Bets.UnitTests.csproj", "{EA0EAFDB-106E-428B-87B6-42ED5797F4B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bets.UnitTests", "Bets.UnitTests\Bets.UnitTests.csproj", "{EA0EAFDB-106E-428B-87B6-42ED5797F4B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
