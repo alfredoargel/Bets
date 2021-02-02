@@ -23,6 +23,8 @@ namespace Bets.Infrastructure.Data.Context
         }
 
         public IMongoCollection<Roulette> Roulettes => _db.GetCollection<Roulette>("Roulettes");
+        public IMongoCollection<Game> Games => _db.GetCollection<Game>("Games");
+        public IMongoCollection<Player> Players => _db.GetCollection<Player>("Players");
 
         internal IClientSessionHandle Session => _session;
 

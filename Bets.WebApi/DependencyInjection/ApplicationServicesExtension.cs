@@ -13,6 +13,8 @@ namespace Bets.WebApi.DependencyInjection
         public static IServiceCollection AddApplicationServices(
            this IServiceCollection services)
         {
+            services.AddScoped<IGameService, GameService>();
+            services.AddScoped<IPlayerService, PlayerService>();
             services.AddScoped<IRouletteService, RouletteService>();
 
             return services;

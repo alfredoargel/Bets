@@ -36,6 +36,5 @@ namespace Bets.Infrastructure.Repositories
         {
             await this._context.Roulettes.ReplaceOneAsync(session: this._context.Session, filter: r => r.Id == id, replacement: roulette);
         }
-
     }
 }

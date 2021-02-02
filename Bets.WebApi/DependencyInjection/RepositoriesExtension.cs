@@ -16,6 +16,8 @@ namespace Bets.WebApi.DependencyInjection
            this IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IGameRepository, GameRepository>();
+            services.AddScoped<IPlayerRepository, PlayerRepository>();
             services.AddScoped<IRouletteRepository, RouletteRepository>();
 
             return services;

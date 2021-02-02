@@ -4,7 +4,14 @@
 	"description": "",
 	"order": [
 		"00cde8b6-09d2-ec70-c167-75d52aa6c4dc",
-		"2938992d-45b2-ed4a-9ab1-24a17119d48a"
+		"2938992d-45b2-ed4a-9ab1-24a17119d48a",
+		"ce4a2330-e6a8-03b4-e0aa-cb694893e059",
+		"6a5d4fd3-7a19-cb53-17f8-e1dd3357c5c8",
+		"053ca324-23ab-3fa2-9210-8f733668436f",
+		"5635138a-dd81-aceb-e109-def054985305",
+		"c5f30596-4b81-e277-11be-ba64408383aa",
+		"fd95a604-cc2f-49fb-7c5d-93e43f53d593",
+		"20ffa33f-1a23-4463-003c-d8614c8bdbe2"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -23,7 +30,7 @@
 					"enabled": true
 				}
 			],
-			"url": "https://localhost:64738/api/Roulette/CreateRoulette",
+			"url": "https://localhost:60900/api/Roulette/CreateRoulette",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -35,7 +42,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1612181984495,
+			"time": 1612237266281,
 			"name": "Create Roulette",
 			"description": "",
 			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
@@ -43,10 +50,79 @@
 			"rawModeData": "{\n    \"number\": 1,\n    \"created\": \"2021-02-01T05:00:00Z\",\n    \"active\": true\n}"
 		},
 		{
+			"id": "053ca324-23ab-3fa2-9210-8f733668436f",
+			"headers": "playerId: 6018c625f93ad4837455ccb2\n",
+			"headerData": [
+				{
+					"key": "playerId",
+					"value": "6018c625f93ad4837455ccb2",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:60900/api/Player/AddAmountToPlayerBalance?amount=500000",
+			"queryParams": [
+				{
+					"key": "amount",
+					"value": "500000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": null,
+			"dataMode": "params",
+			"name": "Add Amount To Player Balance",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612236639104,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "20ffa33f-1a23-4463-003c-d8614c8bdbe2",
+			"headers": "",
+			"headerData": [],
+			"url": "https://localhost:60900/api/Game/CloseGameForRoulette?rouletteId=6017edc2fb7e0aa001ff1d3f",
+			"queryParams": [
+				{
+					"key": "rouletteId",
+					"value": "6017edc2fb7e0aa001ff1d3f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": null,
+			"dataMode": "params",
+			"name": "Close Game For Roulette",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612242707748,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
 			"id": "2938992d-45b2-ed4a-9ab1-24a17119d48a",
 			"headers": "",
 			"headerData": [],
-			"url": "https://localhost:64738/api/Roulette/GetRoulettes",
+			"url": "https://localhost:60900/api/Roulette/GetRoulettes",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -58,11 +134,186 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1612181982543,
+			"time": 1612237269155,
 			"name": "Get Roulletes",
 			"description": "",
 			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
 			"responses": []
+		},
+		{
+			"id": "5635138a-dd81-aceb-e109-def054985305",
+			"headers": "",
+			"headerData": [],
+			"url": "https://localhost:60900/api/Game/OpenGameForRoulette?rouletteId=6017edc2fb7e0aa001ff1d3f",
+			"queryParams": [
+				{
+					"key": "rouletteId",
+					"value": "6017edc2fb7e0aa001ff1d3f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": null,
+			"dataMode": "params",
+			"name": "Open Game For Roulette",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612242623521,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6a5d4fd3-7a19-cb53-17f8-e1dd3357c5c8",
+			"headers": "",
+			"headerData": [],
+			"url": "https://localhost:60900/api/Player/GetPlayers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Players",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612236609171,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c5f30596-4b81-e277-11be-ba64408383aa",
+			"headers": "playerId: 6018c625f93ad4837455ccb2\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "playerId",
+					"value": "6018c625f93ad4837455ccb2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:60900/api/Game/PostBetToRoulette?rouletteId=6017edc2fb7e0aa001ff1d3f",
+			"queryParams": [
+				{
+					"key": "rouletteId",
+					"value": "6017edc2fb7e0aa001ff1d3f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Post Bet To Roulette by number",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612242663263,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"amount\": 1000,\n\t\"number\": 25\n}"
+		},
+		{
+			"id": "ce4a2330-e6a8-03b4-e0aa-cb694893e059",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:60900/api/Player/CreatePlayer",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create Player",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612236594550,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\": \"Luis Alfredo Argel\",\n\t\"balance\": 1000000\n}"
+		},
+		{
+			"id": "fd95a604-cc2f-49fb-7c5d-93e43f53d593",
+			"headers": "playerId: 6018c625f93ad4837455ccb2\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "playerId",
+					"value": "6018c625f93ad4837455ccb2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:60900/api/Game/PostBetToRoulette?rouletteId=6017edc2fb7e0aa001ff1d3f",
+			"queryParams": [
+				{
+					"key": "rouletteId",
+					"value": "6017edc2fb7e0aa001ff1d3f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "b00eb622-52e4-d4d3-c380-22be088f921f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Post Bet To Roulette by color",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612242685863,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"amount\": 2000,\n\t\"color\": 1\n}"
 		}
 	]
 }
