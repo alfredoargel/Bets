@@ -1,4 +1,5 @@
-﻿using Bets.Infrastructure.Data.MongoDB;
+﻿using Bets.Application.Entities;
+using Bets.Infrastructure.Data.MongoDB;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,10 @@ namespace Bets.Infrastructure.Data.Context
             this._session = client.StartSession();
             this._session.StartTransaction();
         }
+
+        public IMongoCollection<Roulette> Roulettes => _db.GetCollection<Roulette>("Roulettes");
+        public IMongoCollection<Game> Games => _db.GetCollection<Game>("Games");
+        public IMongoCollection<Player> Players => _db.GetCollection<Player>("Players");
 
         internal IClientSessionHandle Session => _session;
 
