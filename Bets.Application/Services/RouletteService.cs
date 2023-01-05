@@ -23,9 +23,9 @@ namespace Bets.Application.Services
             return await this._rouletteRepository.GetAll();
         }
 
-        public async Task<Roulette> GetRouletteByIdAsync(string id)
+        public async Task<Roulette> GetRouletteByIdAsync(string sid)
         {
-            return await this._rouletteRepository.GetById(id: id);
+            return await this._rouletteRepository.GetById(id: sid);
         }
 
         public async Task PostRouletteAsync(Roulette roulette)
